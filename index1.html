@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YAKKASAROY premium restaranti</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div class="j1">
+        <div class="j2">
+            <div class="j3">👑 YAKKASAROY</div>
+            <div class="j4">
+                <a href="#bosh" class="j5">Bosh sahifa</a>
+                <a href="#aksiya" class="j5">Aksiya</a>
+                <a href="#menyu-joy" class="j5">Menyu</a>
+                <a href="#galereya" class="j5">Galereya</a>
+                <a href="#bron" class="j5">Joy band qilish</a>
+            </div>
+            <button class="j67" id="rejim-btn" onclick="rejimOzgartir()">☀️</button>
+            <button class="j6" onclick="savatOch()">🛍️ Savat <span id="savat-soni">0</span></button>
+        </div>
+    </div>
+    <div class="j7" id="bosh">
+
+        <div class="qora-parda"></div>
+
+        <div class="j8">
+            <span class="j9">SHARQONA MEHMONDO'STLIK VA OLIY TA'M</span>
+            <h1 class="j10">Haqiqiy O'zbek Milliy Taomlari San'ati</h1>
+            <p class="j11">Eng sara go'shtlar, olovda pishgan kaboblar va unutilmas muhit. Oilangiz va yaqinlaringiz
+                bilan tashrif buyuring.</p>
+            <div class="j12">
+                <a href="#menyu-joy" class="j13">Menyuni ko'rish</a>
+                <a href="#bron" class="j14">Stol band qilish</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="j15" id="aksiya">
+        <div class="j16">
+            <div class="j17">
+                <span class="j18">🔥 KUN TAKLIFI -20%</span>
+                <h2 class="j19">Oilaviy Katta Set (4 kishilik)</h2>
+                <p class="j20">2 porsiya Urgut oshi, 4 dona qo'y shashlik, achchiq-chuchuk salati, issiq patir va 1
+                    choynak limonli ko'k choy.</p>
+                <div class="j21">
+                    <span class="j22">180 000 so'm</span>
+                    <span class="j23">145 000 so'm</span>
+                </div>
+                <button class="j24" onclick="setQosh()">Setni savatga qo'shish</button>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjhitGEFnaStN7kDRgs64sYopY8c1bpiugYgPe2LZBmg&s=10"
+                class="j25">
+        </div>
+    </div>
+
+    <div class="j26" id="menyu-joy">
+        <span class="j27">BIZNING TAOMLAR</span>
+        <h2 class="j28">Maxsus Restoran Menyusi</h2>
+
+        <div class="j29">
+            <input type="text" id="qidiruv" class="j30" placeholder="🔍 Taom nomini qidiring..." onkeyup="qidir()">
+        </div>
+
+        <div class="j31">
+            <button class="j32" onclick="filtr('all')">Barchasi</button>
+            <button class="j32" onclick="filtr('milliy')">Milliy taomlar</button>
+            <button class="j32" onclick="filtr('kabob')">Kaboblar</button>
+            <button class="j32" onclick="filtr('salat')">Salatlar</button>
+            <button class="j32" onclick="filtr('ichimlik')">Ichimliklar</button>
+        </div>
+
+        <div class="j33" id="taomlar-qutisi"></div>
+    </div>
+
+    <div class="j34" id="galereya">
+        <span class="j27">SHINAM MUHIT</span>
+        <h2 class="j28">Restoranimizdan Lavhalar</h2>
+        <div class="j35">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKXixQaIgZoVYSNv8HEFh34Q5z8vzjdUmYMz74kwlnHA&s=10"
+                class="j36">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwN8b_HOJvULVqHppGyOCi5x4mgeC-5sN7dw4ChqkESA&s=10"
+                class="j36">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThjLg6NhpQXJv6G6CtEuZg3Ro6rKiZ9Vu1y0qQVFQbw&s=10"
+                class="j36">
+        </div>
+    </div>
+    <div class="j68">
+        <div class="j69" id="birinchi-blok">
+            <div class="j70">
+                <span class="j71">Yakkasaroy</span>
+                <h2 class="j72">Nega aynan Yakkasaroy</h2>
+                <p class="j73">Restoran nomi — Urgutda yagona martabalardan biriga erishgan.</p>
+                <p class="j73">Biz uchun bu sana yangi davr boshlanishini anglatadi — dunyoga ochiq, o'z madaniyatiga
+                    ishonchli va kelajakka qaragan. Aynan shu g'oya Cafe Yakkasaroy asosini tashkil etdi.</p>
+                <button class="j74" onclick="tarixgaOt()">TARIXNI BILISH →</button>
+            </div>
+            <div class="j75">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYITrzRmebUsSGYmw3w6O0omDUngY0zNfoI2Ms_4ZbWg&s=10"
+                    class="j76" alt="Cafe 1991 interyer">
+            </div>
+        </div>
+
+        <div class="j77" id="ikkinchi-blok">
+            <div class="j78">
+                <span class="j79">UY</span>
+                <h2 class="j80">Café Yakkasaroy zamonaviy gastronomiya, O‘zbekiston madaniyati va mehmondo‘stlik
+                    an’anasini
+                    birlashtiradi.</h2>
+                <button class="j81" onclick="orqagaQayt()">← ORQAGA QAYTISH</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="j77" id="tarix-blok">
+        <div class="j78">
+            <span class="j79">UY</span>
+            <h2 class="j80">Café Yakkasaroy zamonaviy gastronomiya, O‘zbekiston madaniyati va mehmondo‘stlik an’anasini
+                birlashtiradi.</h2>
+            <button class="j81" onclick="tarixYop()">✕ Yopish</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="j82">
+        <div class="j83">
+            <div class="j84">
+                <span class="j85">I BOB · ZAL</span>
+                <h2 class="j86">Sharq zamonaviy talqinda.</h2>
+                <p class="j87">Café Yakkasaroy interyeri sharq motivlari va zamonaviy estetikani birlashtiradi. Bu yerda
+                    oila va do‘stlar bilan yig‘iladi, mehmon kutiladi, muhim voqealar nishonlanadi — yoki shunchaki
+                    yaxshi oqshom o‘tkaziladi.</p>
+            </div>
+            <div class="j88">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsAHM1PbJ4tK0l_-t28LvLuGYCnTEF1WmMddjR6OrJAw&s=10"
+                    class="j89" alt="Cafe 1991 zal interyeri">
+            </div>
+        </div>
+    </div>
+    <div class="j90">
+        <div class="j91">
+            <div class="j92">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTDfk9sJLX_iZ-lPVkbHU-G0mUqcetGjQ04QutEPuN5w&s=10"
+                    class="j93" alt="Bir dasturxon atrofida">
+            </div>
+            <div class="j94">
+                <span class="j95">II BOB · DASTURXON</span>
+                <h2 class="j96">Bir dasturxon atrofida.</h2>
+                <p class="j97">O‘zbek madaniyatida dasturxon — uchrashuv joyi. Bu yerda mehmon kutiladi, taom, suhbat va
+                    vaqt bo‘lishiladi. Café 1991da bu an’ana zamonaviy talqinda davom etadi — oshxona, xizmat va har bir
+                    mehmonga e’tibor orqali.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="j98">
+        <div class="j99">
+            <div class="j100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPjtn8plbzd56Jkmaxeu_ybpuAMzqjIEEdLYdbcy_6g&s=10"
+                    class="j101" alt="Milliy somsa va osh">
+            </div>
+            <div class="j102">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6KN5BofcaymtRiVlSvMqC07wcJwLjW0w_DbhEZm1m3g&s=10"
+                    class="j103" alt="Sharqona choy va ziravorlar">
+            </div>
+        </div>
+    </div>
+
+    <div class="j104">
+        <div class="j105" id="bron-bosh">
+            <span class="j106">BIZ BILAN O‘TIRING</span>
+            <h2 class="j107">Oqshomni<br>eng yaxshisi —<br>shaxsan his qilishdir.</h2>
+            <button class="j108" onclick="bronFormaOch()">STOL BAND QILISH</button>
+        </div>
+
+        <div class="j109" id="bron-forma">
+            <div class="j110">
+                <div class="j111">
+                    <div class="j112">
+                        <span class="j113">TASHRIF</span>
+                        <p class="j114">Mustaqillik shoh ko'chasi</p>
+                        <p class="j115">Toshkent, Uzbekistan</p>
+                    </div>
+                    <div class="j112">
+                        <span class="j113">TO'G'RIDAN-TO'G'RI ALOQA</span>
+                        <p class="j115">+998 88 573 52 77</p>
+                        <p class="j115">WhatsApp</p>
+                        <p class="j115">Telegram</p>
+                        <p class="j115">https://t.me/javoh_web_bot</p>
+                    </div>
+                    <div class="j112" style="border: none;">
+                        <span class="j113">E'TIBOR BERING</span>
+                        <p class="j115">Jamoamiz siz bilan bog'lanmaguncha bron tasdiqlangan hisoblanmaydi.</p>
+                    </div>
+                </div>
+
+                <div class="j116">
+                    <div class="j117">
+                        <div class="j118">
+                            <div class="j119">ISM VA FAMILIYA *</div>
+                            <input type="text" id="t-ism" class="j120" placeholder="Ismingizni kiriting">
+                        </div>
+                        <div class="j118">
+                            <div class="j119">TELEFON RAQAMI *</div>
+                            <input type="tel" id="t-tel" class="j120" value="+998 ">
+                        </div>
+                    </div>
+
+                    <div class="j117">
+                        <div class="j118">
+                            <div class="j119">SANA *</div>
+                            <input type="date" id="t-sana" class="j120">
+                        </div>
+                        <div class="j118">
+                            <div class="j119">VAQT *</div>
+                            <input type="time" id="t-vaqt" class="j120">
+                        </div>
+                    </div>
+
+                    <div class="j117">
+                        <div class="j118">
+                            <div class="j119">MEHMONLAR SONI *</div>
+                            <input type="number" id="t-son" class="j120" value="2" min="1">
+                        </div>
+                        <div class="j118">
+                            <label class="j119">AFZAL ZAL</label>
+                            <select id="t-zal" class="j120">
+                                <option value="Tanlanmagan">Tanlang</option>
+                                <option value="Asosiy zal">Asosiy zal</option>
+                                <option value="VIP kabina">VIP kabina</option>
+                                <option value="Terrasa">Terrasa</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="j117">
+                        <div class="j118">
+                            <label class="j119">SABAB</label>
+                            <select id="t-sabab" class="j120">
+                                <option value="Tanlanmagan">Tanlang</option>
+                                <option value="Kechki ovqat">Kechki ovqat</option>
+                                <option value="Tug'ilgan kun">Tug'ilgan kun</option>
+                                <option value="Oilaviy tadbir">Oilaviy tadbir</option>
+                                <option value="Ish uchrashuvi">Ish uchrashuvi</option>
+                            </select>
+                        </div>
+                        <div class="j118"></div>
+                    </div>
+
+                    <div class="j118" style="margin-bottom: 30px;">
+                        <div class="j119">ALOHIDA ILTIMOSLAR</div>
+                        <div id="t-izoh" class="j121" placeholder="Parhez, tantana yoki joylashuv bo'yicha izohlar...">
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <button class="j122" onclick="telegramgaOt()">SO'ROV YUBORISH</button>
+                        <button class="j123" onclick="bronFormaYop()">← Orqaga</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="j124">
+        <div class="j125">
+            <div class="j126">
+                <h2 class="j127">Cafe yakkasaroy</h2>
+                <p class="j128">Zamonaviy O‘zbekiston — Urgut yuragidagi taomlar, muhit va samimiy mehmondo‘stlik
+                    orqali.</p>
+                <div class="j129">👑 YAKKASAROY</div>
+            </div>
+
+            <div class="j130">
+                <span class="j131">TASHRIF</span>
+                <p class="j132">Mustaqillik shoh ko‘chasi<br>Urgut, Uzbekistan</p>
+
+                <span class="j131" style="margin-top: 28px;">ISH VAQTI</span>
+                <p class="j132">
+                    Dushanba — Payshanba · 8:00 — 23:00<br>
+                    Juma — Shanba · 8:00 — 22:00<br>
+                    Yakshanba · 10:00 — 8:00
+                </p>
+            </div>
+
+            <div class="j130">
+                <span class="j131">BO‘LIMLAR</span>
+                <div class="j133">
+                    <a href="#bosh" class="j134">Biz haqimizda</a>
+                    <a href="#menyu-joy" class="j134">Menyu</a>
+                    <a href="#menyu-joy" class="j134">Bar</a>
+                    <a href="#menyu-joy" class="j134">Vino kartasi</a>
+                    <a href="#galereya" class="j134">Muhit</a>
+                    <a href="#aksiya" class="j134">Tadbirlar</a>
+                    <a href="#bron" class="j134">Aloqa</a>
+                    <a href="#bron" class="j134">Band qilish</a>
+                </div>
+            </div>
+
+            <!-- 4-ustun: Aloqa -->
+            <div class="j130">
+                <span class="j131">ALOQA</span>
+                <p class="j132">
+                    +998 88 573 52 77<br>
+                    1991cafe@gmail.com<br>
+                    Instagram @cafeyakkasroy<br>
+                    Telegram @Javohir_web_sayt
+                </p>
+            </div>
+        </div>
+
+        <div class="j135">
+            <span>© 2026 CAFE 2026 · URGUT</span>
+            <div class="j136">
+                <a href="#" class="j137">MAXFIYLIK</a>
+                <a href="#" class="j137">SHARTLAR</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="j49" id="savat-oyna">
+        <div class="j50">
+            <button class="j51" onclick="savatYop()">✕</button>
+            <h2 class="j52">Sizning Savatchangiz</h2>
+            <div id="savat-ichki" class="j53"></div>
+            <div class="j54">Umumiy summa: <span id="umumiy-pul">0</span> so'm</div>
+            <input type="text" id="yetkazish-manzil" class="j55" placeholder="Yetkazib berish manzilini kiriting...">
+            <button class="j56" onclick="zakazBer()">Buyurtmani rasmiylashtirish</button>
+        </div>
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+
+</html>
